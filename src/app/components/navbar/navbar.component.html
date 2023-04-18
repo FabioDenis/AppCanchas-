@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="https://cdn.icon-icons.com/icons2/390/PNG/512/soccer-ball_39433.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      FUT
+    </a>
+   
+        <a class="navbar-brand" href="#" *ngIf="userLogged| async as user">
+          <img *ngIf="user.photoURL" [src]="user.photoURL" width="30" height="30" class="d-inline-block align-top" alt="">
+          {{user.email}}
+        </a>
+  </nav>
